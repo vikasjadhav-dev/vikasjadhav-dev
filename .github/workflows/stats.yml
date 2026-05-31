@@ -2,11 +2,11 @@ name: Generate README Stats
 
 on:
   schedule:
-    - cron: '0 */12 * * *'
+    - cron: '0 */12 * * *' # Updates your stats automatically every 12 hours
   workflow_dispatch: # Allows you to run it manually
 
 permissions:
-  contents: write # 👈 Added: Gives the Action permission to save the image to your repository
+  contents: write # Gives permission to write files
 
 jobs:
   update-stats:
@@ -20,12 +20,10 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           username: vikasjadhav-dev
-          output_path: trophy.svg # 👈 Added: Tells the script what name to give the file
+          output_path: trophy.svg
 
       - name: Commit & Push Changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          git commit -m "Update profile stats" || exit 0
-          git push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update profile stats"
+          file_pattern: 'trophy.svg'

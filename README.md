@@ -1,12 +1,12 @@
 
 <h1 align="center">Hi 👋, I'm Vikas Jadhav</h1>
 
-<h3 align="center">"Full-Stack Developer | Building web solutions from frontend to backend 🚀"| JavaScript, Node.js, React, Python, Django, MongoDB, MySQL and more 🌐"</h3>
+<h3 align="center">Full-Stack Developer | Building web solutions from frontend to backend 🚀 | JavaScript, Node.js, React, Python, Django, MongoDB, MySQL and more 🌐"</h3>
 
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=gitwithvikas&label=Profile%20views&color=0e75b6&style=flat" alt="vikasjadhav-dev" /> </p>
 
-- 📫 How to reach me **vikasjadhav9755@gmail.com**
+- 📫 How to reach me **vikasjadhav9755@gmail.com** 
 - 🌍 Visit My Website https://www.vikasjadhav.dev
 
 <h3 align="left">Connect with me:</h3>
